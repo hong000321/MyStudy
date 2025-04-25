@@ -1,9 +1,4 @@
 #include <stdio.h>
-#include "Test_header.h"
-
-
-#if FILE_NUM == 2
-
 struct Input {
 	int s;
 	int e;
@@ -17,7 +12,7 @@ struct Input scan() {
 	}
 	return form;
 }
-int my_main() {
+int main() {
 	struct Input input = scan();
 	for(int i = 1; i <= 9; i++) {
 		if(input.s < input.e) {
@@ -34,4 +29,3 @@ int my_main() {
 	}
 	return 0;
 }
-#endif

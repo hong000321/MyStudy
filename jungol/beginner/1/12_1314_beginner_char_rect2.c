@@ -1,10 +1,6 @@
 #include <stdio.h>
-#include "Test_header.h"
 
-
-#if FILE_NUM == 12
-
-int my_main(void) {
+int main(void) {
     int n = 0;
     int ascii_a = 65;
     int index = 0;
@@ -25,4 +21,3 @@ int my_main(void) {
 	
 	return 0;
 }
-#endif
