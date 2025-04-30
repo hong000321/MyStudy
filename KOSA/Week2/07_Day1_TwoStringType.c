@@ -1,9 +1,6 @@
 #include <stdio.h>
-#include "Test_header.h"
 
-
-#if FILE_NUM == 66
-int my_main(void) {
+int main(void) {
 	char str1[] = "My string";
 	char* str2 = "Your String";
 	printf("%s %s \n", str1, str2);
@@ -14,4 +11,3 @@ int my_main(void) {
 
 	return 0;
 }
-#endif

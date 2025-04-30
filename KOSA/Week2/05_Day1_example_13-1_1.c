@@ -1,9 +1,6 @@
 #include <stdio.h>
-#include "Test_header.h"
 
-
-#if FILE_NUM == 64
-int my_main(void) {
+int main(void) {
 	int arr[5] = { 1,2,3,4,5 };
 	int* ptr = &arr;
 	for (int i = 0; i < 5; i++) {
@@ -15,4 +12,3 @@ int my_main(void) {
 
 	return 0;
 }
-#endif

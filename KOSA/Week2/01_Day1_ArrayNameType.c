@@ -1,9 +1,6 @@
 #include <stdio.h>
-#include "Test_header.h"
 
-
-#if FILE_NUM == 60
-int my_main(void) {
+int main(void) {
 	int arr[3] = { 0,1,2 };
 	printf("배열의 이름: %p \n", arr);
 	printf("첫 번째 요소: %p \n", &arr[0]);
@@ -12,4 +9,3 @@ int my_main(void) {
 
 	return 0;
 }
-#endif

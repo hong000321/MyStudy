@@ -1,15 +1,9 @@
 #include <stdio.h>
 
-#include "Test_header.h"
-
-#if FILE_NUM == 12
-
-int my_main(void) {
+int main(void) {
 
 	int num1 = 15;
-
 	int num2 = 20;
-
 	int num3 = num1 & num2;
 
 	printf("AND 연산의 결과: %d \n", num3);
@@ -17,5 +11,3 @@ int my_main(void) {
 	return 0;
 
 }
-
-#endif

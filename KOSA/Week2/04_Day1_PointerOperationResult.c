@@ -1,9 +1,6 @@
 #include <stdio.h>
-#include "Test_header.h"
 
-
-#if FILE_NUM == 63
-int my_main(void) {
+int main(void) {
 	int* ptr1 = 0x0010;
 	double* ptr2 = 0x0010;
 
@@ -19,4 +16,3 @@ int my_main(void) {
 
 	return 0;
 }
-#endif

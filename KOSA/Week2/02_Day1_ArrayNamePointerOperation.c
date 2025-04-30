@@ -1,9 +1,6 @@
 #include <stdio.h>
-#include "Test_header.h"
 
-
-#if FILE_NUM == 61
-int my_main(void) {
+int main(void) {
 	int arr1[3] = { 1,2,3 };
 	double arr2[3] = { 1.1,2.2,3.3 };
 	printf("%d %g \n", *arr1, *arr2);
@@ -12,4 +9,3 @@ int my_main(void) {
 	printf("%d %g \n", arr1[0], arr2[0]);
 	return 0;
 }
-#endif
