@@ -22,51 +22,49 @@
 입력된 데이터가 주어진 범위를 벗어나면 "INPUT ERROR!"을 출력한다.
  */
 #include <stdio.h>
-#define ARR_SIZE 10
+#define ARR_SIZE 100
 
 void printArr(int (*arr)[ARR_SIZE][ARR_SIZE]){
     for(int i = 0 ; i<ARR_SIZE; i++){
         for(int j=0; j<ARR_SIZE; j++){
             int val = (*arr)[i][j];
             if(val != 0)
-                printf("%3d ",val);
+                printf("%d ",val);
         }
-        printf("\n");
+        if((*arr)[i+1][0] != 0)
+            printf("\n");
     }
-    getchar();
 }
 
 
 int main(void){
     int n;
     int arr[ARR_SIZE][ARR_SIZE] = {0};
-    int dir_x = 1; // 1 or -1
-    int dir_y = 1; // 1 or -1
-    int last_p[2] = {0,0};
+    int x=0, k=1;
     int count = 1;
-    scanf("%d",&n);
 
-    for(int j=0; j<n ; j++){
-        arr[0][j] = count;
-        last_p[1]+=dir_y;
-        count++;
+    scanf("%d",&n);
+    if(n>50 || n<1 || n%2==0){
+        printf("INPUT ERROR!\n");
+        return 0;
     }
-    last_p[1]--;
-    dir_y *=-1;
-    for(int i=(n-1); i>0 ; i--){
-        for(int j=0; j<i ; j++){
-            last_p[0]+=dir_x;
-            arr[last_p[0]][last_p[1]] = count;
+    for(int i=0 ; i<((n/2)+(n%2)) ; i++){
+        x = i*2;
+        for(int y=0; y<k ; y++){
+            arr[x][y] = count;
             count++;
         }
-        dir_x *= -1;
-        for(int j=0; j<i ; j++){
-            last_p[1]+=dir_y;
-            arr[last_p[0]][last_p[1]] = count;
+        k++;
+        if(x==n-1){
+            break;
+        }
+        for(int y=k-1; y>=0 ; y--){
+            arr[x+1][y] = count;
             count++;
         }
-        dir_y *= -1;
+        k++;
     }
+
     printArr(&arr);
     return 0;
 }
