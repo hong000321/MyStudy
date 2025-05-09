@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "C 실행",
+            "name": "C++",
             "type": "cppdbg",
             "request": "launch",
             "program": "${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",
@@ -25,11 +25,12 @@
                 }
             ],
             "existing": false,
-            "preLaunchTask": "C 빌드",
-            "detail": "preLaunchTask: C 빌드",
-            "taskDetail": "For Clang Build",
+            "preLaunchTask": "C++ 빌드",
+            "detail": "preLaunchTask: C++ 빌드",
+            "taskDetail": "For C++ Build",
             "taskStatus": "Recently Used Task",
             "isDefault": true
         }
     ]
+
 }

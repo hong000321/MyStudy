@@ -1,0 +1,11 @@
+To effectively use Git, 
+start by setting it up, 
+then create a local repository, 
+stage changes, commit them, 
+and finally, manage your project's 
+history using branches and merging.
+
+
+history using a branches and merging.
+history using branches and merging.
+history using branches and merging.
