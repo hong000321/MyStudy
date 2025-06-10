@@ -14,5 +14,8 @@ int & inc(int &x){
 int main(){
     int x = 5;      // x는 l-value, 5는 r-value
     int y = x*5;    // y는 l-value, x*5는 r-value
-    ++x = 7;        // ++x는 l-value, 7은 r-value
+    ++x = 7;        // ++x는 l-value, 7은 r-valueint swap_flag = 0;
+    int *p = &x;
+    int *&&p2 = p+1;
+    cout << *p  << " : " << *p2 <<endl;
 }

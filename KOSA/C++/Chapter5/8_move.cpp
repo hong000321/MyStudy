@@ -4,9 +4,11 @@
 using namespace std;
 
 int main(){
-    string name1 = "allen"; // 객체? : const char* name1[6] = "allen";
+    // string name1 = "allen"; // 객체? : const char* name1[6] = "allen";
+    char name1[] = "hellen";
     cout << "name 1: " << name1 << endl;
-    string name2 = move(name1);
+    //string name2 = move(name1);
+    char *name2 = move(name1);
     cout << "After, name2 = std::move(name1)" << endl;
     cout << "-> name1: " << name1 << endl;
     cout << "-> name2: " << name2 << endl;
