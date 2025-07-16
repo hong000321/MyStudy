@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE phonebook>
+<phonebook version="1.0">
+	<PhoneNumber Name="YoungJin Suh" TelNo="0108-6651-3333"/>
+	<PhoneNumber Name="YoungHwa Ryu" TelNo="0108-6651-3344"/>
+	<PhoneNumber Name="JongHyuk Moon" TelNo="0108-6651-3355"/>
+	<PhoneNumber Name="SangYul Park" TelNo="0108-6651-3366"/>
+	<PhoneNumber Name="Seungho Lee" TelNo="0108-6651-3377"/>
+	<PhoneNumber Name="Kioh Kim" TelNo="0108-6651-3388"/>
+	<PhoneNumber Name="SooYong Jung" TelNo="0108-6651-3399"/>
+</phonebook>
